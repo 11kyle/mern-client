@@ -35,7 +35,7 @@ export default function Header() {
             <Grid item>
                 <img 
                      src={ProfilePicture}
-                     alt="profile picture"
+                     alt="profile"
                      width="200px"
                  >
                  </img>
