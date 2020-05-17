@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles({
     root: {
@@ -12,7 +12,8 @@ const useStyles = makeStyles({
 
 export default function CenteredTabs() {
     const classes = useStyles();
-    const [value, setValue] = React.useState(0);
+    let location = useLocation();
+    const [value, setValue] = React.useState(location.pathname);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -20,24 +21,27 @@ export default function CenteredTabs() {
 
     return (
             <Tabs 
-                value={value} 
+                value={value}
                 onChange={handleChange} 
                 aria-label="navigation tabs"
                 centered
             >
-                <Tab 
+                <Tab
+                    value="/"
                     label="About"
-                    component={Link}
+                    component={NavLink}
                     to="/"
                 />
-                <Tab 
+                <Tab
+                    value="/portfolio"
                     label="Portfolio"
-                    component={Link}
+                    component={NavLink}
                     to="/portfolio"
                 />
-                <Tab 
+                <Tab
+                    value="/blog"
                     label="Blog"
-                    component={Link}
+                    component={NavLink}
                     to="/blog"
                 />
             </Tabs>

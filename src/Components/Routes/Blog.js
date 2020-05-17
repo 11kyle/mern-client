@@ -2,24 +2,18 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid'; 
 import Paper from '@material-ui/core/Paper';
 import { Typography, Box } from '@material-ui/core';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 
 export default function Blog() {
     return(
         <Grid
             container
-            spacing={0}
-            alignItems="stretch"
-            alignContent="center"
             direction="column"
-            mt="1"
+            alignContent="center"
+            spacing={0}
         >
-            <Grid item xs={11} mx="auto">
-                <Box maxWidth="600px">
-                <Paper elevation={2}>
-                    <Box m={2}>
+            <Grid item xs={12}>
+                <Paper elevation={2} style={{maxWidth: "600px" }}>
+                    <Box p={2} mt={2}>
                         <Typography variant="h6">
                             Tutorial: How to setup and connect mLab.
                         </Typography>
@@ -34,42 +28,11 @@ export default function Blog() {
                         </Typography>
                     </Box>
                 </Paper>
-                </Box>
             </Grid>
 
-            <Grid item xs={11} mx="auto">
-                <Box maxWidth="600px">
-                <Paper elevation={2}>
-                    <Box m={2}>
-                        <Typography variant="h6">
-                            What to do next?
-                        </Typography>
-                        <Typography variant="subtitle2">
-                            Monday, Aug 27 2017 8:56 PM
-                        </Typography>
-                        <Typography>
-                            Author: Kyle Johnson
-                        </Typography>
-                        <List>
-                            <ListItem>
-                                <ListItemText primary="1. Add functionality to the tag checkboxes." />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemText primary="2. Add form validation." />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemText primary="3. Change two-button format to a single-button format that switches functionality from creating a new post to updating an existing post." />
-                            </ListItem>
-                        </List>
-                    </Box>
-                </Paper>
-                </Box>
-            </Grid>
-
-            <Grid item xs={11} mx="auto">
-            <Box maxWidth="600px">
-                <Paper elevation={2}>
-                    <Box m={2}>
+            <Grid item xs={12}>
+                <Paper elevation={2} style={ {maxWidth: "600px" }}>
+                    <Box p={2} mt={2}>
                         <Typography variant="h6">
                             Welcome!
                         </Typography>
@@ -84,7 +47,6 @@ export default function Blog() {
                         </Typography>
                     </Box>
                 </Paper>
-                </Box>
             </Grid>
         </Grid>
     );

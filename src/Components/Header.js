@@ -25,29 +25,28 @@ export default function Header() {
 
     return (
         <Fragment>
-        <Grid
-            container
-            spacing={0}
-            align="center"
-            justify="center"
-            direction="column"
-        >
-            <Grid item>
-                <img 
-                     src={ProfilePicture}
-                     alt="profile"
-                     width="200px"
-                 >
-                 </img>
-                <Typography variant="h2" align="center">
-                    Kyle Johnson
-                </Typography>
-                <Typography variant="subtitle2" align="center">
-                    Full-Stack Developer
-                </Typography>
+            <Grid
+                container
+                align="center"
+                justify="center"
+            >
+                <Grid item xs={12}>
+                    <img 
+                        src={ProfilePicture}
+                        alt="profile"
+                        width="200px"
+                        style={{ marginTop: "16px" }}
+                    >
+                    </img>
+                    <Typography variant="h2" align="center">
+                        Kyle Johnson
+                    </Typography>
+                    <Typography variant="subtitle2" align="center">
+                        Full-Stack Developer
+                    </Typography>
+                </Grid>
             </Grid>
-        </Grid>
-        <Tabs />
+            <Tabs />
         </Fragment>
     );
 }
