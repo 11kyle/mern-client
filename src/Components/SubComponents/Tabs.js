@@ -1,17 +1,17 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+// import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
-    root: {
-        flexGrow: 1,
-    },
-});
+// const useStyles = makeStyles({
+//     root: {
+//         flexGrow: 1,
+//     },
+// });
 
 export default function CenteredTabs() {
-    const classes = useStyles();
+    // const classes = useStyles();
     let location = useLocation();
     const [value, setValue] = React.useState(location.pathname);
 
@@ -29,19 +29,19 @@ export default function CenteredTabs() {
                 <Tab
                     value="/"
                     label="About"
-                    component={NavLink}
+                    component={Link}
                     to="/"
                 />
                 <Tab
                     value="/portfolio"
                     label="Portfolio"
-                    component={NavLink}
+                    component={Link}
                     to="/portfolio"
                 />
                 <Tab
                     value="/blog"
                     label="Blog"
-                    component={NavLink}
+                    component={Link}
                     to="/blog"
                 />
             </Tabs>

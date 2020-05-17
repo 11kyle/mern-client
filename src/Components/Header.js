@@ -2,26 +2,18 @@ import React, { Fragment } from 'react';
 import Grid from '@material-ui/core/Grid'; 
 import ProfilePicture from '../man.png';
 import Tabs from './SubComponents/Tabs';
-import { Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { Typography, MuiThemeProvider } from '@material-ui/core';
+// import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
-    primaryColor: { 
-        backgroundColor: '#F15725',
-        color: '#fff'
-    },
-    secondaryColor: {
-        color: '#000'
-    },
-    jumbotron: {
-        padding: '3em 5em',
-        backgroundColor: '#F15725',
-        color: '#fff'
-    }
-});
+
+// const useStyles = makeStyles({
+//    font-family: Quicksand,sans-serif;
+// });
+
 
 export default function Header() {
-    const classes = useStyles();
+    // const classes = useStyles();
 
     return (
         <Fragment>
