@@ -1,20 +1,10 @@
 import React, { Fragment } from 'react';
 import Grid from '@material-ui/core/Grid'; 
-import ProfilePicture from '../man.png';
+import ProfilePicture from '../Images/man.png';
 import Tabs from './SubComponents/Tabs';
-import { createMuiTheme } from '@material-ui/core/styles';
-import { Typography, MuiThemeProvider } from '@material-ui/core';
-// import { makeStyles } from '@material-ui/core/styles';
-
-
-// const useStyles = makeStyles({
-//    font-family: Quicksand,sans-serif;
-// });
-
+import { Typography } from '@material-ui/core';
 
 export default function Header() {
-    // const classes = useStyles();
-
     return (
         <Fragment>
             <Grid

@@ -1,20 +1,17 @@
 import React from 'react';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import { Link, useLocation } from 'react-router-dom';
-// import { makeStyles } from '@material-ui/core/styles';
-
-// const useStyles = makeStyles({
-//     root: {
-//         flexGrow: 1,
-//     },
-// });
+import { 
+    Tabs,
+    Tab
+} from '@material-ui/core';
+import { 
+    Link,
+    useLocation 
+} from 'react-router-dom';
 
 export default function CenteredTabs() {
-    // const classes = useStyles();
+
     let location = useLocation();
     const [value, setValue] = React.useState(location.pathname);
-
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
