@@ -68,8 +68,8 @@ export default class App extends Component {
               </Route>
             </Switch>
             <Footer />
-            </CssBaseline>
-        </MuiThemeProvider>
+          </CssBaseline>
+      </MuiThemeProvider>
     );
   }
 }
