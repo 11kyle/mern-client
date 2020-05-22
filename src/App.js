@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { 
-  HashRouter,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -50,7 +49,6 @@ export default class App extends Component {
 
   render() {
     return(
-      <HashRouter basename="/">
         <MuiThemeProvider theme={theme}>
           <CssBaseline>
             <Header />
@@ -72,7 +70,6 @@ export default class App extends Component {
             <Footer />
             </CssBaseline>
         </MuiThemeProvider>
-      </HashRouter>
     );
   }
 }

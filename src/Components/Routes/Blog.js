@@ -10,7 +10,7 @@ export default function Blog(props) {
 
     const { blogposts } = props;
     const listItems = blogposts.map((blogpost) => 
-        <Grid item xs={12} key={blogpost.id}>
+        <Grid item xs={12} key={blogpost._id}>
             <Paper elevation={2} style={{maxWidth: "600px" }}>
                 <Box p={2} mt={2}>
                     <Typography variant="h6">
