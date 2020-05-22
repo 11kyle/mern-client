@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { 
-  BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -9,7 +9,11 @@ import Footer from './Components/Footer';
 import Portfolio from './Components/Routes/Portfolio';
 import Blog from './Components/Routes/Blog';
 import About from './Components/Routes/About';
-import { MuiThemeProvider, createMuiTheme, CssBaseline } from '@material-ui/core';
+import { 
+  MuiThemeProvider,
+  createMuiTheme,
+  CssBaseline
+} from '@material-ui/core';
 
 const axios = require('axios');
 
@@ -46,7 +50,7 @@ export default class App extends Component {
 
   render() {
     return(
-      <Router>
+      <HashRouter basename="/">
         <MuiThemeProvider theme={theme}>
           <CssBaseline>
             <Header />
@@ -61,14 +65,14 @@ export default class App extends Component {
                     : <Blog blogposts={this.state.blogposts} />
                 }
                   </Route>
-              <Route path='/'>
+              <Route  exact path='/'>
                 <About />
               </Route>
             </Switch>
             <Footer />
             </CssBaseline>
         </MuiThemeProvider>
-      </Router>
+      </HashRouter>
     );
   }
 }
