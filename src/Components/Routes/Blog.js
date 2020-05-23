@@ -5,15 +5,14 @@ import {
     Typography,
     Box 
 } from '@material-ui/core'; 
+import moment from 'moment';
 
 export default function Blog(props) {
 
     const { blogposts } = props;
-    const sortedBlogposts = blogposts.sort((a, b) => {
-        return b.posted - a.posted
-    });
-    console.log(sortedBlogposts);
-    
+
+    console.log(moment(blogposts[3].posted).format('dddd MMM D, YYYY'));
+
     const listItems = blogposts.map((blogpost) => 
         <Grid item xs={12} key={blogpost._id}>
             <Paper elevation={2} style={{maxWidth: "600px" }}>
@@ -22,7 +21,7 @@ export default function Blog(props) {
                         {blogpost.title}
                     </Typography>
                     <Typography variant="subtitle2">
-                        Thursday, Sep 21, 2017 8:37 PM
+                        {blogpost.posted}
                     </Typography>
                     <Typography>
                         Author: {blogpost.author}

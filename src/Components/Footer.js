@@ -23,7 +23,6 @@ const useStyles = makeStyles({
 export default function Footer() {
 
     const classes = useStyles();
-    const preventDefault = (event) => event.preventDefault();
 
     return (
         <Grid
@@ -31,20 +30,17 @@ export default function Footer() {
             justify="center"
         >
             <Link
-                href="https://github.com/11kyle"
-                onClick={preventDefault}    
+                href="https://github.com/11kyle"   
             >
                 <GitHubIcon className={classes.overrides} fontSize="large" />
             </Link>
             <Link
-                href="https://www.linkedin.com/in/kylejohnson11"
-                onClick={preventDefault}    
+                href="https://www.linkedin.com/in/kylejohnson11/" 
             >
                 <LinkedInIcon className={classes.overrides} fontSize="large" />
             </Link>
             <Link
-                href="#"
-                onClick={preventDefault}    
+                href="#"  
             >
                 <PictureAsPdfIcon className={classes.overrides} fontSize="large" />
             </Link>
