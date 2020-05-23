@@ -22,7 +22,7 @@ export default function Header() {
                     <Typography variant="h2">
                         Kyle Johnson
                     </Typography>
-                    <Typography variant="subtitle2">
+                    <Typography variant="subtitle2" color="primary">
                         Full-Stack Developer
                     </Typography>
                 </Grid>

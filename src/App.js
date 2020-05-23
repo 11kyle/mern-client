@@ -17,8 +17,17 @@ import {
 const axios = require('axios');
 
 const theme = createMuiTheme({
-  typography: { h2: { fontFamily: 'Quicksand, sans-serif'}}
-})
+  typography: { 
+    h2: { 
+      fontFamily: 'Quicksand, sans-serif'
+    }
+  },
+  palette: {
+    primary: {
+      main: '#EB6D4A'
+    }
+  }
+});
 
 export default class App extends Component {
 

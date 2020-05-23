@@ -22,6 +22,7 @@ export default function CenteredTabs() {
                 onChange={handleChange} 
                 aria-label="navigation tabs"
                 centered
+                indicatorColor="primary"
             >
                 <Tab
                     value="/"
