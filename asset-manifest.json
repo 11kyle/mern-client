@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/mern-client/static/js/main.30e3050c.chunk.js",
-    "main.js.map": "/mern-client/static/js/main.30e3050c.chunk.js.map",
+    "main.js": "/mern-client/static/js/main.0d41fe7b.chunk.js",
+    "main.js.map": "/mern-client/static/js/main.0d41fe7b.chunk.js.map",
     "runtime-main.js": "/mern-client/static/js/runtime-main.e2c506e6.js",
     "runtime-main.js.map": "/mern-client/static/js/runtime-main.e2c506e6.js.map",
     "static/js/2.242e9e62.chunk.js": "/mern-client/static/js/2.242e9e62.chunk.js",
     "static/js/2.242e9e62.chunk.js.map": "/mern-client/static/js/2.242e9e62.chunk.js.map",
     "index.html": "/mern-client/index.html",
-    "precache-manifest.890777906576505d78d78df6ee1854ef.js": "/mern-client/precache-manifest.890777906576505d78d78df6ee1854ef.js",
+    "precache-manifest.f7daac928f27e6107c77b00317055101.js": "/mern-client/precache-manifest.f7daac928f27e6107c77b00317055101.js",
     "service-worker.js": "/mern-client/service-worker.js",
     "static/js/2.242e9e62.chunk.js.LICENSE.txt": "/mern-client/static/js/2.242e9e62.chunk.js.LICENSE.txt",
     "static/media/man.png": "/mern-client/static/media/man.9152be17.png",
@@ -17,6 +17,6 @@
   "entrypoints": [
     "static/js/runtime-main.e2c506e6.js",
     "static/js/2.242e9e62.chunk.js",
-    "static/js/main.30e3050c.chunk.js"
+    "static/js/main.0d41fe7b.chunk.js"
   ]
 }
