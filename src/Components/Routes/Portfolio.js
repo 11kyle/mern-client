@@ -14,7 +14,7 @@ import websiteForPortfolio02 from '../../Images/website_for_portfolio_02.png';
 const useStyles = makeStyles({
     root: {
         maxWidth: 600,
-        marginTop: 16,
+        margin: "16px auto 0 auto",
     },
     media: {
         height: 140,
@@ -30,7 +30,7 @@ export default function Portfolio() {
         <Grid
             container
             direction="column"
-            alignItems="center"
+            alignItems="stretch"
             spacing={0}
         >
             <Card className={classes.root}>

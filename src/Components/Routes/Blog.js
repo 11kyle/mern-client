@@ -3,7 +3,7 @@ import {
     Grid,
     Paper,
     Typography,
-    Box 
+    Box
 } from '@material-ui/core'; 
 import moment from 'moment';
 
@@ -15,7 +15,7 @@ export default function Blog(props) {
 
     const listItems = blogposts.map((blogpost) => 
         <Grid item xs={12} key={blogpost._id}>
-            <Paper elevation={2} style={{maxWidth: "600px" }}>
+            <Paper elevation={2} style={{maxWidth: "600px", margin: "0 auto"}}>
                 <Box p={2} mt={2}>
                     <Typography variant="h6">
                         {blogpost.title}
@@ -38,7 +38,7 @@ export default function Blog(props) {
         <Grid
             container
             direction="column"
-            alignItems="center"
+            alignItems="stretch"
             spacing={0}
         >
             {listItems}

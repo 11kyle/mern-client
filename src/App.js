@@ -35,7 +35,7 @@ export default class App extends Component {
   }
 
   getBlogposts = () => {
-    axios.get('https://kj-portfolio.herokuapp.com/api/blogpost')
+    axios.get('https://cors-anywhere.herokuapp.com/https://kj-portfolio.herokuapp.com/api/blogpost')
       .then(response => {
         this.setState({
           blogposts: response.data,
