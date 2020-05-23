@@ -10,7 +10,6 @@ export default function Header() {
             <Grid
                 container
                 align="center"
-                justify="center"
             >
                 <Grid item xs={12}>
                     <img 
@@ -20,10 +19,10 @@ export default function Header() {
                         style={{ marginTop: "16px" }}
                     >
                     </img>
-                    <Typography variant="h2" align="center">
+                    <Typography variant="h2">
                         Kyle Johnson
                     </Typography>
-                    <Typography variant="subtitle2" align="center">
+                    <Typography variant="subtitle2">
                         Full-Stack Developer
                     </Typography>
                 </Grid>

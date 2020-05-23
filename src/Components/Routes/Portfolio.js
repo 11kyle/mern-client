@@ -30,7 +30,8 @@ export default function Portfolio() {
         <Grid
             container
             direction="column"
-            alignContent="center"
+            alignItems="center"
+            spacing={0}
         >
             <Card className={classes.root}>
                 <CardActionArea>

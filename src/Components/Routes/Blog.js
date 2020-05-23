@@ -39,7 +39,7 @@ export default function Blog(props) {
         <Grid
             container
             direction="column"
-            alignContent="center"
+            alignItems="center"
             spacing={0}
         >
             {listItems}
