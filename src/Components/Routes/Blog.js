@@ -22,7 +22,7 @@ export default function Blog(props) {
     // Map blogposts the the DOM
     const listItems = blogposts.map((blogpost) => 
         <Grid item xs={12} key={blogpost._id}>
-            <Paper elevation={2} style={{maxWidth: "600px", margin: "0 auto"}}>
+            <Paper elevation={2} style={{width: "600px", margin: "0 auto"}}>
                 <Box p={2} mt={2}>
                     <Typography variant="h6">
                         {blogpost.title}

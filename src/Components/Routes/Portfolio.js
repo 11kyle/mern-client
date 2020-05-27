@@ -13,7 +13,7 @@ import websiteForPortfolio02 from '../../Images/website_for_portfolio_02.png';
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 600,
+        width: 600,
         margin: "16px auto 0 auto",
     },
     media: {
