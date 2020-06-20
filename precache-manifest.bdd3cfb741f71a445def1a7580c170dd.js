@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab2b0b0712f9b93905d756473fd50221",
+    "revision": "376c354b5a3e39e4613972902b49321b",
     "url": "/mern-client/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mern-client/static/js/2.242e9e62.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fac869ce32980ab4d63e",
-    "url": "/mern-client/static/js/main.1feb8006.chunk.js"
+    "revision": "efd5e74a62dc8d46e234",
+    "url": "/mern-client/static/js/main.0f3af507.chunk.js"
   },
   {
     "revision": "be98632a039c4d50927c",
@@ -24,11 +24,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mern-client/static/media/man.9152be17.png"
   },
   {
-    "revision": "9d571721d35ff6776a51105906b8b943",
-    "url": "/mern-client/static/media/website_for_portfolio_01.9d571721.png"
+    "revision": "b1f5c7bf36514b6bf45558cb3561c0d5",
+    "url": "/mern-client/static/media/portfolio-desktop-01.b1f5c7bf.png"
   },
   {
-    "revision": "6d82890752e8ba0a87bfd4a85dc0cf0f",
-    "url": "/mern-client/static/media/website_for_portfolio_02.6d828907.png"
+    "revision": "b8da2f063f1ca0c2786afa13ad2d0b1a",
+    "url": "/mern-client/static/media/portfolio-desktop-02.b8da2f06.png"
   }
 ]);
