@@ -11,7 +11,8 @@ import About from './Components/Routes/About';
 import { 
   MuiThemeProvider,
   createMuiTheme,
-  CssBaseline
+  CssBaseline,
+  Grid
 } from '@material-ui/core';
 
 const axios = require('axios');
@@ -61,21 +62,27 @@ export default class App extends Component {
         <MuiThemeProvider theme={theme}>
           <CssBaseline>
             <Header />
+            <Grid
+             container
+             style={{maxWidth: "600px", margin: "0 auto"}}>
             <Switch>
-              <Route path='/portfolio'>
-                <Portfolio />
-              </Route>
-              <Route path='/blog'>
-                {
-                  (this.state.loading)
-                    ?<p>Loading...</p>
-                    : <Blog blogposts={this.state.blogposts} />
-                }
-                  </Route>
-              <Route  exact path='/'>
-                <About />
-              </Route>
+              
+                <Route path='/portfolio'>
+                  <Portfolio />
+                </Route>
+                <Route path='/blog'>
+                  {
+                    (this.state.loading)
+                      ?<p>Loading...</p>
+                      : <Blog blogposts={this.state.blogposts} />
+                  }
+                    </Route>
+                <Route  exact path='/'>
+                  <About />
+                </Route>
+              
             </Switch>
+            </Grid>
             <Footer />
           </CssBaseline>
       </MuiThemeProvider>

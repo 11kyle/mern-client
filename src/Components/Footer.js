@@ -18,7 +18,7 @@ const useStyles = makeStyles({
         margin: "16px",
         fill: "inherit",
     },
-})
+});
 
 export default function Footer() {
 
