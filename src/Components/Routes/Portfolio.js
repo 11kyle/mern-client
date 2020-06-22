@@ -1,12 +1,8 @@
 import React from 'react';
 import { 
     Grid,
-    Typography,
+    Box,
     makeStyles,
-    Card,
-    CardActionArea,
-    CardContent,
-    CardMedia
 } from '@material-ui/core';
 import PortfolioDesktop01 from '../../Images/portfolio-desktop-01.png';
 import PortfolioDesktop02 from '../../Images/portfolio-desktop-02.png';
@@ -16,7 +12,8 @@ const useStyles = makeStyles({
         marginTop: "16px",
     },
     media: {
-        height: 140,
+        maxWidth: "100%",
+        height: "auto",
     },
 });
 
@@ -25,44 +22,35 @@ export default function Portfolio() {
     const classes = useStyles();
 
     return(
-        <Grid item xs={12}>
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        alt="One of the websites I created."
-                        image={PortfolioDesktop01}
-                        title="One of the websites I created."
-                    />
-                    <CardContent>
-                        <Typography variant="h5" component="h2">
-                            Ghibli
-                        </Typography>
-                        <Typography variant="body2" component="p">
-                            Built with React, Axios and custom CSS.
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        alt="One of the websites I created."
-                        image={PortfolioDesktop02}
-                        title="One of the websites I created."
-                    />
-                    <CardContent>
-                        <Typography variant="h5" component="h2">
-                            Gif Search
-                        </Typography>
-                        <Typography variant="body2" component="p">
-                            Built with React, Axios and Bootstrap.
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-        </Grid>
+        // <Grid 
+        //     container 
+        //     alignItems="stretch"
+        //     justify="center"
+        //     spacing={1}
+        //     className={classes.root}
+        // >
+        <React.Fragment>
+            <Grid item sm={5}>
+                <Box mt={4} px={2} border="1px solid #000">
+                    <img src={PortfolioDesktop01} alt="A website Kyle built." className={classes.media} />  
+                </Box>
+            </Grid>
+            <Grid item sm={5}>
+                <Box mt={4} px={2} border="1px solid #000">
+                    <img src={PortfolioDesktop02} alt="A website Kyle built." className={classes.media} />
+                </Box>
+            </Grid>
+            <Grid item sm={5}>
+                <Box mt={4} px={2} border="1px solid #000">
+                    <img src={PortfolioDesktop01} alt="A website Kyle built." className={classes.media} />  
+                </Box>
+            </Grid>
+            <Grid item sm={5}>
+                <Box mt={4} px={2} border="1px solid #000">
+                    <img src={PortfolioDesktop02} alt="A website Kyle built." className={classes.media} />
+                </Box>
+            </Grid>
+        </React.Fragment>
+        // </Grid>
     );
 }

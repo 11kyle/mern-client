@@ -17,31 +17,31 @@ export default function CenteredTabs() {
     };
 
     return (
-            <Tabs 
-                value={value}
-                onChange={handleChange} 
-                aria-label="navigation tabs"
-                centered
-                indicatorColor="primary"
-            >
-                <Tab
-                    value="/"
-                    label="About"
-                    component={Link}
-                    to="/"
-                />
-                <Tab
-                    value="/portfolio"
-                    label="Portfolio"
-                    component={Link}
-                    to="/portfolio"
-                />
-                <Tab
-                    value="/blog"
-                    label="Blog"
-                    component={Link}
-                    to="/blog"
-                />
-            </Tabs>
+        <Tabs 
+            value={value}
+            onChange={handleChange} 
+            aria-label="navigation tabs"
+            centered
+            indicatorColor="primary"
+        >
+            <Tab
+                value="/"
+                label="About"
+                component={Link}
+                to="/"
+            />
+            <Tab
+                value="/portfolio"
+                label="Portfolio"
+                component={Link}
+                to="/portfolio"
+            />
+            <Tab
+                value="/blog"
+                label="Blog"
+                component={Link}
+                to="/blog"
+            />
+        </Tabs>
     );
 }

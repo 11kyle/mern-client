@@ -22,15 +22,16 @@ export default function Blog(props) {
     // Map blogposts the the DOM
     const listItems = blogposts.map((blogpost) => 
         <Grid item xs={12} key={blogpost._id}>
-            <Paper elevation={2} style={{maxWidth: "600px", margin: "0 auto"}}>
+            <Box my={4}>
+            <Paper elevation={2}>
                 <Box p={2} mt={2}>
-                    <Typography variant="h6">
+                    <Typography variant="h4">
                         {blogpost.title}
                     </Typography>
                     <Typography variant="subtitle2" color="primary">
                         {moment(blogpost.posted).format('dddd MMM D, YYYY')}
                     </Typography>
-                    <Typography>
+                    <Typography gutterBottom>
                         Author: {blogpost.author}
                     </Typography>
                     <Typography>
@@ -38,6 +39,7 @@ export default function Blog(props) {
                     </Typography>
                 </Box>
             </Paper>
+            </Box>
         </Grid>
     );
 

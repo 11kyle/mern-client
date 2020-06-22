@@ -2,44 +2,74 @@ import React from 'react';
 import {
     Typography,
     Grid,
-    Paper,
     Box,
-    Link,
+    List,
+    ListItem,
+    ListItemText,
+    Chip,
     makeStyles,
 } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: "inherit",
-        width: "100px",
-        margin: "0 auto",
+        [theme.breakpoints.up('sm')]: {
+            borderRadius: "10% / 50%",
+        }
     },
-    overrides: {
-        margin: "16px",
-        fill: "inherit",
-    }
-});
+}));
 
 export default function About() {
 
     const classes = useStyles();
 
     return(
-        <Grid item xs={12}>
-            <Paper elevation={2}>
-                <Box p={2} mt={2}>
-                    <Typography variant="h6">About Page</Typography>
-                    <Typography variant="body1">
-                    Hi, I'm Kyle, your front-end web developer! Well, I'm your guy if you're looking for a friendly, talented front-end web developer. Feel free to check out my recent work and if you have any questions, please contact me through my 
-                        <Link 
-                            href="https://www.linkedin.com/in/kylejohnson11/"
-                            target="_blank"
-                            rel="noopener"
-                        > LinkedIn
-                        </Link>.
-                    </Typography>
+        <React.Fragment>
+            <Grid item sm={12}>
+                <Box p={2} my={4} align="center" color="white" bgcolor="primary.main" className={classes.root}>
+                    <Typography variant="h5" gutterBottom>Hi, I'm Kyle. Nice to meet you.</Typography>
+                    <Typography>Full-stack developer with 5+ years experience in internet technologies and 30+ years experience of being an all-around nice guy. Be sure to check out my portfolio for recent work and my blog for tutorials.</Typography>
                 </Box>
-            </Paper>
-        </Grid>
+            </Grid>
+
+            <Grid item sm={12}>
+                <Box p={2} my={4}>
+                    <Typography variant="h4" align="center">Skills</Typography>
+                    <Grid container align="center">
+                        <Grid item sm={6}>
+                            <Typography variant="h6" color="primary">Front-End</Typography>
+                            <Chip label="HTML5" variant="outlined" />
+                            <Chip label="CSS3" variant="outlined" />
+                            <Chip label="Javascript" variant="outlined" />
+                            <Chip label="React" variant="outlined" />
+                            <Chip label="Material-Ui" variant="outlined" />
+                            <Chip label="Chrome Dev Tools" variant="outlined" />
+                            <Chip label="Bootstrap" variant="outlined" />
+                        </Grid>
+                        <Grid item sm={6}>
+                            <Typography variant="h6" color="primary">Back-End</Typography>
+                            <Chip label="Node.js" variant="outlined" />
+                            <Chip label="Express.js" variant="outlined" />
+                            <Chip label="MongoDB" variant="outlined" />
+                            <Chip label="Git & GitHub" variant="outlined" />
+                            <Chip label="Cypress.io" variant="outlined" />
+                        </Grid>
+                    </Grid>
+                </Box>
+            </Grid>
+
+            <Grid item sm={6}>
+                <Box p={2} my={4}>
+                    <Typography variant="h4" align="center">Education</Typography>
+                    <List>
+                        <ListItem>
+                            <ListItemText primary="University of Denver" secondary="Bootcamp Computer Software Engineering" />
+                        </ListItem>
+                        <ListItem>
+                            <ListItemText primary="University of Wisconsin - Stout" secondary="BS Mechanical Engineering" />
+                        </ListItem>
+                    </List>
+                </Box>
+            </Grid>        
+        </React.Fragment>
     );
 }
