@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/mern-client/static/js/main.0f3af507.chunk.js",
-    "main.js.map": "/mern-client/static/js/main.0f3af507.chunk.js.map",
+    "main.js": "/mern-client/static/js/main.1be08eb4.chunk.js",
+    "main.js.map": "/mern-client/static/js/main.1be08eb4.chunk.js.map",
     "runtime-main.js": "/mern-client/static/js/runtime-main.e2c506e6.js",
     "runtime-main.js.map": "/mern-client/static/js/runtime-main.e2c506e6.js.map",
-    "static/js/2.242e9e62.chunk.js": "/mern-client/static/js/2.242e9e62.chunk.js",
-    "static/js/2.242e9e62.chunk.js.map": "/mern-client/static/js/2.242e9e62.chunk.js.map",
+    "static/js/2.76958302.chunk.js": "/mern-client/static/js/2.76958302.chunk.js",
+    "static/js/2.76958302.chunk.js.map": "/mern-client/static/js/2.76958302.chunk.js.map",
     "index.html": "/mern-client/index.html",
-    "precache-manifest.bdd3cfb741f71a445def1a7580c170dd.js": "/mern-client/precache-manifest.bdd3cfb741f71a445def1a7580c170dd.js",
+    "precache-manifest.53aa7e70b075dbf6e62d23bd8521c767.js": "/mern-client/precache-manifest.53aa7e70b075dbf6e62d23bd8521c767.js",
     "service-worker.js": "/mern-client/service-worker.js",
-    "static/js/2.242e9e62.chunk.js.LICENSE.txt": "/mern-client/static/js/2.242e9e62.chunk.js.LICENSE.txt",
+    "static/js/2.76958302.chunk.js.LICENSE.txt": "/mern-client/static/js/2.76958302.chunk.js.LICENSE.txt",
     "static/media/man.png": "/mern-client/static/media/man.9152be17.png",
     "static/media/portfolio-desktop-01.png": "/mern-client/static/media/portfolio-desktop-01.b1f5c7bf.png",
     "static/media/portfolio-desktop-02.png": "/mern-client/static/media/portfolio-desktop-02.b8da2f06.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e2c506e6.js",
-    "static/js/2.242e9e62.chunk.js",
-    "static/js/main.0f3af507.chunk.js"
+    "static/js/2.76958302.chunk.js",
+    "static/js/main.1be08eb4.chunk.js"
   ]
 }
