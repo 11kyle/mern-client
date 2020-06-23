@@ -4,8 +4,9 @@ import {
     Box,
     makeStyles,
 } from '@material-ui/core';
-import PortfolioDesktop01 from '../../Images/portfolio-desktop-01.png';
-import PortfolioDesktop02 from '../../Images/portfolio-desktop-02.png';
+import PortfolioImage_1 from '../../Images/11kyle.github.io_ghibli-react-app_.png';
+import PortfolioImage_2 from '../../Images/11kyle.github.io_gif-search_.png';
+import PortfolioImage_3 from '../../Images/11kyle.github.io_react-todo-table_.png';
 
 const useStyles = makeStyles({
     root: {
@@ -22,32 +23,26 @@ export default function Portfolio() {
     const classes = useStyles();
 
     return(
-        // <Grid 
-        //     container 
-        //     alignItems="stretch"
-        //     justify="center"
-        //     spacing={1}
-        //     className={classes.root}
-        // >
         <React.Fragment>
             <Grid item sm={5}>
-                <Box mt={4} px={2} border="1px solid #000">
-                    <img src={PortfolioDesktop01} alt="A website Kyle built." className={classes.media} />  
+                <Box mt={4} px={2}>
+                    <a href="https://11kyle.github.io/ghibli-react-app/">
+                        <img src={PortfolioImage_1} alt="A website Kyle built." className={classes.media} />  
+                    </a>
                 </Box>
             </Grid>
             <Grid item sm={5}>
-                <Box mt={4} px={2} border="1px solid #000">
-                    <img src={PortfolioDesktop02} alt="A website Kyle built." className={classes.media} />
+                <Box mt={4} px={2}>
+                    <a href="https://11kyle.github.io/gif-search/">
+                        <img src={PortfolioImage_2} alt="A website Kyle built." className={classes.media} />
+                    </a>
                 </Box>
             </Grid>
             <Grid item sm={5}>
-                <Box mt={4} px={2} border="1px solid #000">
-                    <img src={PortfolioDesktop01} alt="A website Kyle built." className={classes.media} />  
-                </Box>
-            </Grid>
-            <Grid item sm={5}>
-                <Box mt={4} px={2} border="1px solid #000">
-                    <img src={PortfolioDesktop02} alt="A website Kyle built." className={classes.media} />
+                <Box mt={4} px={2}>
+                    <a href="https://11kyle.github.io/react-todo-table/">
+                        <img src={PortfolioImage_3} alt="A website Kyle built." className={classes.media} />  
+                    </a>
                 </Box>
             </Grid>
         </React.Fragment>

@@ -22,9 +22,9 @@ export default function Blog(props) {
     // Map blogposts the the DOM
     const listItems = blogposts.map((blogpost) => 
         <Grid item xs={12} key={blogpost._id}>
-            <Box my={4}>
+            <Box mt={4}>
             <Paper elevation={2}>
-                <Box p={2} mt={2}>
+                <Box p={2}>
                     <Typography variant="h4">
                         {blogpost.title}
                     </Typography>
@@ -47,6 +47,5 @@ export default function Blog(props) {
         <React.Fragment>
             {listItems} 
         </React.Fragment>
-
     );
 }
